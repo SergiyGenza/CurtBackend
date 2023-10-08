@@ -26,33 +26,26 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("1", async (req, res) => {
-  let data = [];
-  data.companies.map((c) => {
-    request(
-      {
-        method: "GET",
-        uri: c,
-      },
-      function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-          // res.json(body);
-          data.push(body);
-        }
-      }
-    );
-  });
-  return data;
-});
-
 // mintadsMSPush
 // feed-1
-app.get("/api/mintads/company/feed-1", function (req, res) {
+app.get("/api/mintads/company/feed-1/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
-      uri: data.mintadsMSPush_CompanyFeed_1,
+      uri:
+        data.mintadsMSPush_CompanyFeed_1 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
     },
+    // (uri =
+    //   data.mintadsMSPush_CompanyFeed_1 +
+    //   "&date_from=" +
+    //   req.params.start +
+    //   "&date_to=" +
+    //   req.params.end),
+    // console.log(uri),
     function (error, response, body) {
       if (!error && response.statusCode == 200) {
         res.json(body);
@@ -61,11 +54,16 @@ app.get("/api/mintads/company/feed-1", function (req, res) {
   );
 });
 
-app.get("/api/mintads/our/feed-1", function (req, res) {
+app.get("/api/mintads/our/feed-1/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
-      uri: data.mintadsMSPush_OurFeed_1,
+      uri:
+        data.mintadsMSPush_OurFeed_1 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
     },
     function (error, response, body) {
       if (!error && response.statusCode == 200) {
@@ -75,11 +73,16 @@ app.get("/api/mintads/our/feed-1", function (req, res) {
   );
 });
 // feed-2
-app.get("/api/mintads/company/feed-2", function (req, res) {
+app.get("/api/mintads/company/feed-2/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
-      uri: data.mintadsMSPush_CompanyFeed_2,
+      uri:
+        data.mintadsMSPush_CompanyFeed_2 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
     },
     function (error, response, body) {
       if (!error && response.statusCode == 200) {
@@ -89,11 +92,16 @@ app.get("/api/mintads/company/feed-2", function (req, res) {
   );
 });
 
-app.get("/api/mintads/our/feed-2", function (req, res) {
+app.get("/api/mintads/our/feed-2/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
-      uri: data.mintadsMSPush_OurFeed_2,
+      uri:
+        data.mintadsMSPush_OurFeed_2 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
     },
     function (error, response, body) {
       if (!error && response.statusCode == 200) {
@@ -104,11 +112,16 @@ app.get("/api/mintads/our/feed-2", function (req, res) {
 });
 
 // daopush
-app.get("/api/daopush/company/feed-1", function (req, res) {
+app.get("/api/daopush/company/feed-1/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
-      uri: data.daopush_Company_Feed_1,
+      uri:
+        data.daopush_Company_Feed_1 +
+        "&startDate=" +
+        req.params.start +
+        "&endDate=" +
+        req.params.end,
     },
     function (error, response, body) {
       if (!error && response.statusCode == 200) {
@@ -118,11 +131,16 @@ app.get("/api/daopush/company/feed-1", function (req, res) {
   );
 });
 
-app.get("/api/daopush/our/feed-1", function (req, res) {
+app.get("/api/daopush/our/feed-1/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
-      uri: data.daopush_Our_Feed_1,
+      uri:
+        data.daopush_Our_Feed_1 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
     },
     function (error, response, body) {
       if (!error && response.statusCode == 200) {
