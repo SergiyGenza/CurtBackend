@@ -91,7 +91,6 @@ app.get("/api/mintads/company/feed-2/:start/:end", function (req, res) {
     }
   );
 });
-
 app.get("/api/mintads/our/feed-2/:start/:end", function (req, res) {
   request(
     {
@@ -110,8 +109,7 @@ app.get("/api/mintads/our/feed-2/:start/:end", function (req, res) {
     }
   );
 });
-
-// daopush
+// daopush feed 1
 app.get("/api/daopush/company/feed-1/:start/:end", function (req, res) {
   request(
     {
@@ -130,13 +128,271 @@ app.get("/api/daopush/company/feed-1/:start/:end", function (req, res) {
     }
   );
 });
-
 app.get("/api/daopush/our/feed-1/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
       uri:
         data.daopush_Our_Feed_1 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+// daopush feed 2
+app.get("/api/daopush/company/feed-2/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.daopush_Company_Feed_2 +
+        "&startDate=" +
+        req.params.start +
+        "&endDate=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/daopush/our/feed-2/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.daopush_Our_Feed_2 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+// daopush feed 3
+app.get("/api/daopush/company/feed-3/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.daopush_Company_Feed_3 +
+        "&startDate=" +
+        req.params.start +
+        "&endDate=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/daopush/our/feed-3/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.daopush_Our_Feed_3 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+// myBid feed 1
+app.get("/api/mybid/company/feed-1/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.myBid_Company_Feed_1 +
+        "&startDate=" +
+        req.params.start +
+        "&endDate=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/mybid/our/feed-1/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.myBid_Our_Feed_1 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+// myBid feed 2;
+app.get("/api/mybid/company/feed-2/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.myBid_Company_Feed_2 +
+        "&startDate=" +
+        req.params.start +
+        "&endDate=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/mybid/our/feed-2/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.myBid_Our_Feed_2 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+// myBid feed 3;
+app.get("/api/mybid/company/feed-3/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.myBid_Company_Feed_3 +
+        "&startDate=" +
+        req.params.start +
+        "&endDate=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/mybid/our/feed-3/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.myBid_Our_Feed_3 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+// myBid feed 3;
+app.get("/api/mybid/company/feed-4/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.myBid_Company_Feed_4 +
+        "&startDate=" +
+        req.params.start +
+        "&endDate=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/mybid/our/feed-4/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.myBid_Our_Feed_4 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+// trending.bid;
+app.get("/api/trendingbid/company/feed-1/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.trendingBid_Company_Feed_1 +
+        "&date_start=" +
+        req.params.start +
+        "&date_stop=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/trendingbid/our/feed-1/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.trendingBid_Our_Feed_1 +
         "&date_from=" +
         req.params.start +
         "&date_to=" +
