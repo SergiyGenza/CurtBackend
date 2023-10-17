@@ -405,7 +405,44 @@ app.get("/api/trendingbid/our/feed-1/:start/:end", function (req, res) {
     }
   );
 });
-
+// MediaModern
+app.get("/api/mediamodern/company/feed-1/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.mediaModern_Company_Feed_1 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/mediamodern/our/feed-1/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.mediaModern_Our_Feed_1 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+//////////////////////////
 app.listen(3000, () => {
   console.log("node server is running on http://localhost:3000");
 });

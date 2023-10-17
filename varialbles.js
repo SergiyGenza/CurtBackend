@@ -57,12 +57,8 @@ module.exports.trendingBid_Company_Feed_1 =
   "https://trending.bid/api/reports/json2?user_id=21091&key=r7M1vjUaZ4t3DhCX4ipb&filter%5BtypeId%5D%5B%5D=5&currency=USD";
 module.exports.trendingBid_Our_Feed_1 =
   "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=4c7ace57-9e0f-469a-8598-1ba5b5e3fc4c&dsp_id=13530";
-
-////////////////////////
-// module.exports.companies = [
-//   "https://platformapi.net/api/v1/reports/publisher/bydate?token=19f7af28-ed89-4420-8458-a0efae6c91e8&endpoint_id=13232&date_from=2023-09-15&date_to=2023-09-15",
-//   "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=4c7ace57-9e0f-469a-8598-1ba5b5e3fc4c&date_from=2023-09-15&date_to=2023-09-15&dsp_id=13529",
-
-//   "https://daopush-api.info/api/statistic/pops-web?api-key=XJsVxexiMZ3FVOtTFm954L1iDX9ZcUwV&startDate=2023-09-15&endDate=2023-09-15&sourceId=48512&groupBy=days",
-//   "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=4648acaa-5e29-487a-8089-1fe33ff6549e&dsp_id=13666&date_from=2023-09-15&date_to=2023-09-15",
-// ];
+//////////////////////////////////////////////
+module.exports.mediaModern_Company_Feed_1 =
+  "https://api.platform.mediamodern.pro/api/statistics/publisher/rtb/getStatisticsByDays?api_token=14KhEWCaXv4vxz46EyLy9nAJe4AUFDPW&date_from=2023-09-22&date_to=2023-10-15";
+module.exports.mediaModern_Our_Feed_1 =
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=3bcee178-2c34-4fab-9cdd-826ce16fcf69&date_from=2023-09-22&date_to=2023-09-27&dsp_id=13598";
