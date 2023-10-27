@@ -324,13 +324,13 @@ app.get("/api/trendingbid/our/feed-1/:start/:end", function (req, res) {
     }
   );
 });
-// MediaModern
-app.get("/api/mediamodern/company/feed-1/:start/:end", function (req, res) {
+/////Mobivion
+app.get("/api/mobivion/company/feed-1/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
       uri:
-        data.mediaModern_Company_Feed_1 +
+        data.mobivion_Company_Feed_1 +
         "&date_from=" +
         req.params.start +
         "&date_to=" +
@@ -343,12 +343,86 @@ app.get("/api/mediamodern/company/feed-1/:start/:end", function (req, res) {
     }
   );
 });
-app.get("/api/mediamodern/our/feed-1/:start/:end", function (req, res) {
+app.get("/api/mobivion/our/feed-1/:start/:end", function (req, res) {
   request(
     {
       method: "GET",
       uri:
-        data.mediaModern_Our_Feed_1 +
+        data.mobivion_Our_Feed_1 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+/////Mobivion feed 2
+app.get("/api/mobivion/company/feed-2/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.mobivion_Company_Feed_2 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/mobivion/our/feed-2/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.mobivion_Our_Feed_2 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+// Mobivion feed3
+app.get("/api/mobivion/company/feed-3/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.mobivion_Company_Feed_3 +
+        "&date_from=" +
+        req.params.start +
+        "&date_to=" +
+        req.params.end,
+    },
+    function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json(body);
+      }
+    }
+  );
+});
+app.get("/api/mobivion/our/feed-3/:start/:end", function (req, res) {
+  request(
+    {
+      method: "GET",
+      uri:
+        data.mobivion_Our_Feed_3 +
         "&date_from=" +
         req.params.start +
         "&date_to=" +

@@ -50,5 +50,15 @@ module.exports.mediaModern_Company_Feed_1 =
 module.exports.mediaModern_Our_Feed_1 =
   "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=3bcee178-2c34-4fab-9cdd-826ce16fcf69&date_from=2023-09-22&date_to=2023-09-27&dsp_id=13598";
 ///////////////////////////////////////////////////////Mobivion
-// module.exports.trendingBid_Company_Feed_1 = " "
-// module.exports.trendingBid_Our_Feed_1 =
+module.exports.mobivion_Company_Feed_1 =
+  "https://api.mobivion.com/statistics/days?access_token=47e8944b3f3d8a27&campaign_id=4015";
+module.exports.mobivion_Our_Feed_1 =
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=068dad21-34ff-4fe1-b30f-f9b25457ebbd&dsp_id=14079";
+module.exports.mobivion_Company_Feed_2 =
+  "https://api.mobivion.com/statistics/days?access_token=47e8944b3f3d8a27&campaign_id=4016";
+module.exports.mobivion_Our_Feed_2 =
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=068dad21-34ff-4fe1-b30f-f9b25457ebbd&dsp_id=14078";
+module.exports.mobivion_Company_Feed_3 =
+  "https://api.mobivion.com/statistics/days?access_token=47e8944b3f3d8a27&campaign_id=4017";
+module.exports.mobivion_Our_Feed_3 =
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=068dad21-34ff-4fe1-b30f-f9b25457ebbd&dsp_id=14081";
