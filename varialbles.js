@@ -30,15 +30,29 @@ module.exports.daopush_Our_Feed_3 =
   "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=4648acaa-5e29-487a-8089-1fe33ff6549e&dsp_id=13602";
 ////////////////// MyBid ////////////////////////////////////////////////////////////////////////////////
 module.exports.myBid_Company_Feed_1 =
-  "https://api.mybidio.com/api/billing/v1/supply-side-platforms-statistics?token=pFJMWTwfUaRc4Rrc0ajPQmc2P4qOUUxzROfHmh2dL9nXPKfmz5rtaxQZgG554h6P";
+  "https://api.mybidio.com/api/billing/v1/supply-side-platforms-statistics?token=qIMuC61xCYzZmV5uyhvojq25K1HetyNvW1obIvsbCt7sK5Qw8794foRZ2aDm8TPp&startDate=2023-09-18&endDate=2023-09-24";
 module.exports.myBid_Our_Feed_1 =
-  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=068dad21-34ff-4fe1-b30f-f9b25457ebbd&dsp_id=14083";
-
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=20181d6c-2307-42e1-ac47-0bede2449daa&dsp_id=13728";
 module.exports.myBid_Company_Feed_2 =
-  "https://api.mybidio.com/api/billing/v1/supply-side-platforms-statistics?token=uPqblY7Gj8ciSczw0Ew6LPxG8vzBFhRcQ6QqJkKkTwtMH9N1WFB71wuWMsqfFBUZ";
+  "https://api.mybidio.com/api/billing/v1/supply-side-platforms-statistics?token=aqX3QBuou2LO7nc09MBJotCwcqk3wJS1oQvL7KSQ4YzUOO1NaZfKXB9pGHnB8emP";
 module.exports.myBid_Our_Feed_2 =
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=20181d6c-2307-42e1-ac47-0bede2449daa&dsp_id=13729";
+module.exports.myBid_Company_Feed_3 =
+  "https://api.mybidio.com/api/billing/v1/supply-side-platforms-statistics?token=OO5YQOE8zSj22QewfFuRlOo8ps4073GQjLoWeemB8yUl4PCPVSxrE0vaTZCWSQFZ";
+module.exports.myBid_Our_Feed_3 =
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=20181d6c-2307-42e1-ac47-0bede2449daa&dsp_id=13731";
+module.exports.myBid_Company_Feed_4 =
+  "https://api.mybidio.com/api/billing/v1/supply-side-platforms-statistics?token=8KB2EFPgtYNT5M6LHZ5lkjrPpHPh4bzmyLPDyqVHk5nEEFDkcRhUquThkGkqe9Ev";
+module.exports.myBid_Our_Feed_4 =
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=068dad21-34ff-4fe1-b30f-f9b25457ebbd&dsp_id=13730";
+module.exports.myBid_Company_Feed_5 =
+  "https://api.mybidio.com/api/billing/v1/supply-side-platforms-statistics?token=pFJMWTwfUaRc4Rrc0ajPQmc2P4qOUUxzROfHmh2dL9nXPKfmz5rtaxQZgG554h6P";
+module.exports.myBid_Our_Feed_5 =
+  "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=068dad21-34ff-4fe1-b30f-f9b25457ebbd&dsp_id=14083";
+module.exports.myBid_Company_Feed_6 =
+  "https://api.mybidio.com/api/billing/v1/supply-side-platforms-statistics?token=uPqblY7Gj8ciSczw0Ew6LPxG8vzBFhRcQ6QqJkKkTwtMH9N1WFB71wuWMsqfFBUZ";
+module.exports.myBid_Our_Feed_6 =
   "https://backapi.admy.com/api/v1/reports/dsp/bydate?token=068dad21-34ff-4fe1-b30f-f9b25457ebbd&dsp_id=14082";
-
 //////////////////////////////////////////////trending.bid
 module.exports.trendingBid_Company_Feed_1 =
   "https://trending.bid/api/reports/json2?user_id=21091&key=r7M1vjUaZ4t3DhCX4ipb&filter%5BtypeId%5D%5B%5D=5&currency=USD";
